@@ -10,8 +10,9 @@ import * as serviceWorker from './serviceWorker';
 const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
 ReactDOM.render(
      <Provider store={createStoreWithMiddleware(reducers)}>
-<App/>, document.getElementById('root')
- </Provider> 
+<App/>
+</Provider> , document.getElementById('root')
+
 );
 
 // If you want your app to work offline and load faster, you can change
