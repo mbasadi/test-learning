@@ -5,7 +5,7 @@ import './App.css';
   if (!fpics) {
     return <div>Loading...</div>;
   } 
-  const videoItems = fpics.map(pic => {
+  const picItems = fpics.map(pic => {
     return (    
       <div key={pic.id} className="card" >
          <img src={pic.url} alt="pictures are unavailable"/>
@@ -18,7 +18,7 @@ import './App.css';
   });
   return (
     <div className='main'>
-    {videoItems}
+    {picItems}
     </div>
   )
 };
